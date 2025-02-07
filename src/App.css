@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #322F34;
+  color: white;
+  font-family: system-ui, sans-serif;
+}
+.container {
+  width: min(100%, 900px);
+  padding: 10px 15px;
+  margin: 0 auto;
+}
+li {
+  list-style: none;
+}
+header.header {
+  padding-top: 30px;
+}
+header.header h1 {
+  text-align: center;
+  font-size: clamp(2rem, 5vw, 4rem);
+}
+main.main {
+  margin: 30px auto;
+}
+input[type="text"] {
+  border: none;
+  padding: 15px 15px;
+  flex: 4;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+button {
+  border: none;
+  padding: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  min-height: 50px;
+}
+input[type="text"]:focus {
+  outline: none;
+}
+form.formList {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+form.formList button {
+  background-color: rgb(17, 118, 219);
+  color: white;
+}
+ul.listTaskContainer {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+ul.listTaskContainer li {
+background-color: rgb(119, 112, 119);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  padding: 15px 20px;
+}
+ul.listTaskContainer li h3 {
+  font-size: clamp(1.6rem, 4vw, 2rem);
+}
+ul.listTaskContainer li div.roleGroup {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+ul.listTaskContainer li div.roleGroup button {
+  padding: 15px 20px;
+  color: white;
+}
+button.btnDelete {
+  background-color: rgb(220, 63, 63);
+}
+button.btnEdit {
+  background-color: rgb(233, 127, 29);
+}
+button.btnDone {
+  background-color: rgb(17, 219, 34);
+}
+button.btnUndone {
+  background-color: rgb(17, 20, 219);
+}
+
+ul.listTaskContainer li form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+ul.listTaskContainer li form input {
+  flex: 7;
+}
+ul.listTaskContainer li form button {
+  background-color: rgb(17, 118, 219);
+  flex: 1;
+  color: white;
+}
+button.taskDone {
+  background-color: rgb(39, 164, 45);
+}
+button.taskNoDone {
+  background-color: orange;
+}
